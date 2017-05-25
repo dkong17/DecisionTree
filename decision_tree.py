@@ -119,15 +119,3 @@ class DecisionTree:
             return 'depth: {}\npoints: {}\nlabel:{}'.format(node.depth, node.points, node.label)
         else:
             return 'depth: {}\npoints: {}\nthreshold: {}\nindex: {}'.format(node.depth, node.points, node.split_rule[1], node.split_rule[0])
-
-    # def visualize(self, graph=None, parent=None, node=None):
-    #     if graph is None:
-    #         graph = AGraph(directed=True)
-    #         n = visual_node(self.root)
-    #         graph.add_node(n)
-    #     else:
-    #         n = visual_node(node)
-    #         graph.add_node(n)
-    #         graph.add_edge(parent, n)
-    #     if n.label is None:
-    #         visualize(graph, )
